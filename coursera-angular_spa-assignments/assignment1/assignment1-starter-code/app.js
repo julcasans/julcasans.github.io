@@ -14,7 +14,7 @@ var LunchCheckController = function($scope) {
         $scope.message = 'Too much!';
       }
     } else {
-        $scope.message = '';
+        $scope.message = 'Please enter data first';
     }
   }
 }
