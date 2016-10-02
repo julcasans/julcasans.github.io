@@ -1,0 +1,15 @@
+<div class="clear">
+  <div ng-show="foundList.foundItemList.length>0">
+    <h3>{{ foundList.myTitle }}</h3>
+    <ol>
+      <li ng-repeat="foundItem in foundList.foundItemList">
+        <strong><em>{{ foundItem.name }}:</em></strong> {{ foundItem.description }}
+
+        <button ng-click="foundList.onRemove({foundItem: $index});">Don't want this one!</button>
+      </li>
+    </ol>
+  </div>
+  <div ng-show="foundList.foundItemList && foundList.foundItemList.length==0">
+    <h3>Nothing found.</h3>
+  </div>
+</div>
