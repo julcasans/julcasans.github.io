@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Modules & Routing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <script src="scripts/data.module.js"></script>
+  <script src="scripts/menudata.services.js"></script>  
+  <script src="scripts/menuapp.module.js"></script>
+  <script src="scripts/MenuAppController.js"></script>
+  <script src="scripts/CategoriesComponentController.js"></script>
+  <script src="scripts/categories.component.js"></script>
+  <script src="scripts/routes.js"></script>
+</head>
+
+<body ng-app="MenuApp" ng-controller="MenuAppController as menuAppCtrl">
+    <ui-view></ui-view>
+</body>
+
+</html>
